@@ -1,0 +1,132 @@
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:5:0: C0325: Unnecessary parens after 'if' keyword (superfluous-parens)
+hw2_debugging.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+hw2_debugging.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+hw2_debugging.py:4:0: C0103: Function name "mergeSort" doesn't conform to snake_case naming style (invalid-name)
+hw2_debugging.py:4:14: W0621: Redefining name 'arr' from outer scope (line 34) (redefined-outer-name)
+hw2_debugging.py:13:0: C0116: Missing function or method docstring (missing-function-docstring)
+hw2_debugging.py:13:14: C0103: Argument name "leftArr" doesn't conform to snake_case naming style (invalid-name)
+hw2_debugging.py:13:23: C0103: Argument name "rightArr" doesn't conform to snake_case naming style (invalid-name)
+hw2_debugging.py:14:4: C0103: Variable name "leftIndex" doesn't conform to snake_case naming style (invalid-name)
+hw2_debugging.py:15:4: C0103: Variable name "rightIndex" doesn't conform to snake_case naming style (invalid-name)
+hw2_debugging.py:16:4: C0103: Variable name "mergeArr" doesn't conform to snake_case naming style (invalid-name)
+hw2_debugging.py:19:12: C0103: Variable name "rightIndex" doesn't conform to snake_case naming style (invalid-name)
+hw2_debugging.py:22:12: C0103: Variable name "leftIndex" doesn't conform to snake_case naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 4.58/10 (previous run: 4.58/10, +0.00)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:18:32: E0001: Parsing failed: 'unmatched ']' (hw2_debugging, line 18)' (syntax-error)
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:20:50: E0001: Parsing failed: 'unmatched ']' (hw2_debugging, line 20)' (syntax-error)
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:20:77: E0001: Parsing failed: 'unmatched ']' (hw2_debugging, line 20)' (syntax-error)
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:28:46: E0001: Parsing failed: 'unmatched ')' (hw2_debugging, line 28)' (syntax-error)
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:20:56: E0001: Parsing failed: 'invalid syntax. Perhaps you forgot a comma? (hw2_debugging, line 20)' (syntax-error)
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+hw2_debugging.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+hw2_debugging.py:4:15: W0621: Redefining name 'arr' from outer scope (line 34) (redefined-outer-name)
+hw2_debugging.py:10:21: E0602: Undefined variable 'mergeSort' (undefined-variable)
+hw2_debugging.py:10:44: E0602: Undefined variable 'mergeSort' (undefined-variable)
+hw2_debugging.py:13:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 4.17/10 (previous run: 4.58/10, -0.42)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+hw2_debugging.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+hw2_debugging.py:4:15: W0621: Redefining name 'arr' from outer scope (line 34) (redefined-outer-name)
+hw2_debugging.py:13:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.33/10 (previous run: 4.17/10, +4.17)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+hw2_debugging.py:6:15: W0621: Redefining name 'arr' from outer scope (line 36) (redefined-outer-name)
+hw2_debugging.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.75/10 (previous run: 8.33/10, +0.42)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+hw2_debugging.py:6:15: W0621: Redefining name 'arr' from outer scope (line 36) (redefined-outer-name)
+hw2_debugging.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.75/10 (previous run: 8.75/10, +0.00)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:5:0: W0105: String statement has no effect (pointless-string-statement)
+hw2_debugging.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+hw2_debugging.py:6:15: W0621: Redefining name 'arr' from outer scope (line 36) (redefined-outer-name)
+hw2_debugging.py:14:0: W0105: String statement has no effect (pointless-string-statement)
+hw2_debugging.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.08/10 (previous run: 8.75/10, -0.67)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:6:0: C0116: Missing function or method docstring (missing-function-docstring)
+hw2_debugging.py:6:15: W0621: Redefining name 'arr' from outer scope (line 36) (redefined-outer-name)
+hw2_debugging.py:15:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.75/10 (previous run: 8.08/10, +0.67)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:22:19: E0001: Parsing failed: 'unindent does not match any outer indentation level (hw2_debugging, line 22)' (syntax-error)
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:8:0: C0301: Line too long (115/100) (line-too-long)
+hw2_debugging.py:6:15: W0621: Redefining name 'arr' from outer scope (line 42) (redefined-outer-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.17/10 (previous run: 8.75/10, +0.42)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:6:15: W0621: Redefining name 'arr' from outer scope (line 46) (redefined-outer-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.58/10 (previous run: 9.17/10, +0.42)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:7:15: W0621: Redefining name 'arr' from outer scope (line 4) (redefined-outer-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.58/10 (previous run: 9.58/10, +0.00)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+************* Module hw2_debugging
+hw2_debugging.py:6:15: W0621: Redefining name 'arr' from outer scope (line 46) (redefined-outer-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.58/10 (previous run: 9.58/10, +0.00)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pylint hw2_debugging.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.58/10, +0.42)
+
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ 
