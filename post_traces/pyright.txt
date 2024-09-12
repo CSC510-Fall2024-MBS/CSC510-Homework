@@ -1,0 +1,17 @@
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pyright rand.py
+
+added 1 package, and audited 2 packages in 4s
+
+found 0 vulnerabilities
+npm notice
+npm notice New patch version of npm available! 10.8.1 -> 10.8.3
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.3
+npm notice To update run: npm install -g npm@10.8.3
+npm notice
+0 errors, 0 warnings, 0 informations 
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pyright hw2_debugging.py
+0 errors, 0 warnings, 0 informations 
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pyright test_hw2_debugging.py
+File or directory "file:///workspaces/CSC510-Homework/test_hw2_debugging.py" does not exist.
+@manavkamdar27 ➜ /workspaces/CSC510-Homework (main) $ pyright test_case_hw2_debugging.py
+0 errors, 0 warnings, 0 informations 

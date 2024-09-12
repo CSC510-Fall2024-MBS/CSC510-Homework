@@ -30,7 +30,7 @@ jobs:
         python -m pip install flake8 pytest
         python -m pip install pylint 
         python -m pip install autopep8
-        python -m pip install bandit
+        python -m pip install pyright
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
@@ -53,9 +53,9 @@ jobs:
   #     run: git diff --exit-code || (git config user.name "github-actions" && git config user.email "github-actions@github.com" && git commit -am "Apply autopep8 formatting" && git push)
 
 
-    - name: pylint verification
+    - name: pyright verification
       run: |
-        pylint $(git ls-files '*.py')
+        pyright $(git ls-files '*.py')
 
     - name: bandit verification
       run: |
