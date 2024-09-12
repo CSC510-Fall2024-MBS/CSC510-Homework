@@ -42,9 +42,9 @@ jobs:
       run: |
         pip install pytest pytest-cov
 
-    - name: autopep8 verification
-      run: |
-        autopep8 $(git ls-files '*.py')
+    # - name: autopep8 verification
+    #   run: |
+    #     autopep8 $(git ls-files '*.py')
 
     # ⁠- ⁠name: Run autopep8
     #   run: autopep8 --in-place --aggressive --aggressive --recursive .
