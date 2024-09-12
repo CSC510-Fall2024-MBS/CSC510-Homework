@@ -58,15 +58,6 @@ jobs:
       run: |
         pyright $(git ls-files '*.py')
 
-    - name: Set up pre-commit configuration
-      run: |
-        echo "repos:
-          - repo: https://github.com/pre-commit/mirrors-autopep8
-          rev: v1.5.7
-          hooks:
-            - id: autopep8" > .pre-commit-config.yaml
-            pre-commit install
-
     - name: Run autopep8 with pre-commit
       run: pre-commit run --all-files
     
