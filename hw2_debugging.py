@@ -1,14 +1,15 @@
-'''Imports random array function from rand.py'''
+"""
+Imports random array function from rand.py
+"""
 import rand
 
 
-
 def merge_sort(arr):
-    """ 
+    """
     Continuously divides the array into pieces recursively, then recombines
     each section in sorted order
     """
-    if len(arr) == 1:
+    if len(arr) == 1 or len(arr) == 0:
         return arr
 
     half = len(arr) // 2
@@ -17,16 +18,16 @@ def merge_sort(arr):
 
 
 def recombine(left_arr, right_arr):
-    """ 
-    This function recombines the 
-    solutions in order to get the 
+    """
+    This function recombines the
+    solutions in order to get the
     results.
     """
     left_index = 0
     right_index = 0
     merge_arr = []
-    while   left_index < len(left_arr) and right_index < len(right_arr):
-        if left_arr  [left_index] < right_arr[right_index]:
+    while left_index < len(left_arr) and right_index < len(right_arr):
+        if left_arr[left_index] < right_arr[right_index]:
             merge_arr.append(left_arr[left_index])
             left_index += 1
         else:
