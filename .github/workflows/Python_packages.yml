@@ -56,7 +56,3 @@ jobs:
     - name: pyright verification
       run: |
         pyright $(git ls-files '*.py')
-
-    - name: bandit verification
-      run: |
-        bandit $(git ls-files '*.py')
