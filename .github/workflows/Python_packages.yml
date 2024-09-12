@@ -40,14 +40,15 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
-      run: |
+      run: | # Install and run pytest
         pip install pytest pytest-cov
+        pytest $(git ls-files 'test_*.py')
 
     - name: pyright verification
-      run: |
+      run: | # Run pyright on all .py files
         pyright $(git ls-files '*.py')
 
-    - name: Autopep8 Verification
+    - name: Run Autopep8 on all files
       run: | # Finds the name of each .py file and runs autopep8 on each
         find -type f -name '*.py' ! -path '*/migrations/*' -exec autopep8 --in-place --aggressive --aggressive '{}' \;
     
