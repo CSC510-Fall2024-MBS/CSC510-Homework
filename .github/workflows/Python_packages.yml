@@ -56,3 +56,9 @@ jobs:
     - name: pyright verification
       run: |
         pyright $(git ls-files '*.py')
+
+    repos:
+  - repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: v1.5.7  # Use the latest stable version from the repo
+    hooks:
+      - id: autopep8
