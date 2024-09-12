@@ -1,4 +1,5 @@
-""" Imports subprocess to handle array shuffling """
+""" Imports subprocess to 
+handle array generation """
 import subprocess # nosec B404
 
 def random_array(arr):
@@ -10,8 +11,8 @@ def random_array(arr):
 
     # Iterates through each element of the array and populates it with a number
     for i, _ in enumerate(arr):
-        shuffled_num = subprocess.run(["shuf", "-i1-20", "-n1"], capture_output=True, check = True) # nosec B607 B603
-        arr[i] = int(shuffled_num.stdout) 
+        shuffled_num = subprocess.run(["shuf", "-i1-20", "-n1"], capture_output=True, check = True)
+        arr[i] = int(shuffled_num.stdout)
 
 
     # Return populated array

@@ -156,3 +156,20 @@ Your code has been rated at 8.57/10 (previous run: 7.14/10, +1.43)
 
 -------------------------------------------------------------------
 Your code has been rated at 10.00/10 (previous run: 8.57/10, +1.43)
+
+
+@shinegami-2002 ➜ /workspaces/CSC510-Homework (main) $ pylint test_case_hw2_debugging.py
+************* Module test_case_hw2_debugging
+test_case_hw2_debugging.py:18:0: C0303: Trailing whitespace (trailing-whitespace)
+test_case_hw2_debugging.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+test_case_hw2_debugging.py:4:0: C0116: Missing function or method docstring (missing-function-docstring)
+test_case_hw2_debugging.py:9:0: C0116: Missing function or method docstring (missing-function-docstring)
+test_case_hw2_debugging.py:14:0: C0116: Missing function or method docstring (missing-function-docstring)
+
+-----------------------------------
+Your code has been rated at 6.43/10
+
+@shinegami-2002 ➜ /workspaces/CSC510-Homework (main) $ pylint test_case_hw2_debugging.py
+
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 6.43/10, +3.57)
