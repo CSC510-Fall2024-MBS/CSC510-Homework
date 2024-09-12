@@ -59,6 +59,6 @@ jobs:
         pyright $(git ls-files '*.py')
 
     - name: Autopep8 Verification
-      run: |
-        find -type f -name '*.py' ! -path '*/migrations/*' -exec autopep8 --in-place --aggressive --aggressive
+      run: | # Finds the name of each .py file and runs autopep8 on each
+        find -type f -name '*.py' ! -path '*/migrations/*' -exec autopep8 --in-place --aggressive --aggressive '{}' \;
     
