@@ -54,7 +54,7 @@ def test_sort():
     # Test empty array
     sample_array = []
     a2 = merge_sort(sample_array)
-    assert a2 == []
+    assert not a2 # Assert that it is an empty array
     # Test array with 1 element
     sample_array = [5]
     a2 = merge_sort(sample_array)
