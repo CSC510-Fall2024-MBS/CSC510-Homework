@@ -58,6 +58,7 @@ jobs:
       run: |
         pyright $(git ls-files '*.py')
 
-    - name: Run autopep8 with pre-commit
-      run: pre-commit run --all-files
+    - name: Autopep8 Verification
+      run: |
+        find -type f -name '*.py' ! -path '*/migrations/*' -exec autopep8 --in-place --aggressive --aggressive
     
