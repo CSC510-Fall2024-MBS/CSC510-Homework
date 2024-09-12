@@ -9,9 +9,11 @@ def random_array(arr):
     shuffled_num = None
 
     # Iterates through each element of the array and populates it with a number
-    for _ in arr:
-        shuffled_num = subprocess.run(["shuf", "-i1-20", "-n1"], capture_output=True, check = True)
-        _ = int(shuffled_num.stdout)
+    for i, _ in enumerate(arr):
+        shuffled_num = subprocess.run(["shuf", "-i1-20", "-n1"], capture_output=True, check = True) # nosec B607 B603
+        arr[i] = int(shuffled_num.stdout) 
+
+    breakpoint()
 
     # Return populated array
     return arr
