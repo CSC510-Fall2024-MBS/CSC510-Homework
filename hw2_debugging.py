@@ -1,13 +1,12 @@
-'''A code for merge sort'''
+'''Imports random array function from rand.py'''
 import rand
 
 
 
 def merge_sort(arr):
     """ 
-    This function that divides the problem 
-    into two recursive function calls, 
-    this uses divide and conquer approach.
+    Continuously divides the array into pieces recursively, then recombines
+    each section in sorted order
     """
     if len(arr) == 1:
         return arr
@@ -29,7 +28,7 @@ def recombine(left_arr, right_arr):
     while   left_index < len(left_arr) and right_index < len(right_arr):
         if left_arr  [left_index] < right_arr[right_index]:
             right_index += 1
-            merge_arr    [left_index + right_index] = [left_arr  ,   left_index]
+            merge_arr    [left_index + right_index] = left_arr[left_index]
         else:
             left_index += 1
             merge_arr    [left_index + right_index] = right_arr[right_index]
