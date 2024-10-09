@@ -1,6 +1,12 @@
 #!/bin/bash
+#
+PID=$(pgrep -f infinite.sh)
+pkill -f infinite.sh
 
-pkill -15 -n bash
+if kill -0 "$PID" 2>/dev/null; then 
+    echo " failed to kill process with PID $PID"
+    exit 1
+else 
+    echo "successfully killed process PID $PID"
+fi
 
-# This kills all bash processes, also kills the terminal though (maybe should find a different way)
-# killall bash
