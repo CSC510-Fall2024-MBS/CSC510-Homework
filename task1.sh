@@ -15,3 +15,4 @@ else
     echo "Successfully killed process (infinite.sh) PID: $PID"
 fi
 
+exit
