@@ -24,6 +24,6 @@
 # gawk -F, '{ ageSum += $7; counter += 1 } END { print ageSum / counter }'
 
 # All the parts piped together
-grep -E "^[0-9]{1,3},[0-9],2,".*",.*,.*,.*,.*,.*,.*,.*,S" titanic.csv | sed 's/female/F/; s/male/M/' | gawk -F, '{ ageSum += $7; counter += 1 } END { print ageSum / counter }'
+grep -E "^[0-9]{1,3},[0-9],2,".*",.*,.*,.*,.*,.*,.*,.*,S" titanic.csv | sed 's/female/F/; s/male/M/' | gawk -F, '{ print; ageSum += $7; counter += 1 } END { print "Average Age: " ageSum / counter }'
 
 exit
